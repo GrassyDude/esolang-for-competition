@@ -139,17 +139,17 @@ def check_input():
 
 def check_output():
 	if str(hor[0]).find("-out") != -1:
-		print(chr(int(hor[0].split("-out")[0])))
+		print(chr(int(hor[0].split("-out")[0])), end="")
 		hor[0] = 0
 	if str(diag[0]).find("-out") != -1:
-		print(chr(int(diag[0].split("-out")[0])))
+		print(chr(int(diag[0].split("-out")[0])), end="")
 		diag[0] = 0
 	if len(diag)-1 > 0:
 		if str(diag[1]).find("-out") != -1:
-			print(chr(int(diag[1].split("-out")[0])))
+			print(chr(int(diag[1].split("-out")[0])), end="")
 			diag[1] = 0
 	if str(ver[0]).find("-out") != -1:
-		print(chr(int(ver[0].split("-out")[0])))
+		print(chr(int(ver[0].split("-out")[0])), end="")
 		ver[0] = 0
 
 while check():
